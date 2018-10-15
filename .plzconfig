@@ -2,3 +2,7 @@
 ; You may need to override these; they're set to facilitate running tests etc locally.
 signing-key = ~/.keys/plz.gpg.asc
 gpg-password = 12345
+
+[java]
+javacworker = //javac_worker
+junitrunner = //junit_runner

@@ -1,5 +1,7 @@
 subinclude("@pleasings//java:maven_library")
 
+package(javac_tool = "javac")
+
 maven_library(
     name = "javac-worker",
     srcs = glob(["src/**/*.java"]),
