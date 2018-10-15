@@ -9,11 +9,11 @@ java_library(
         "SkippedAndSuccess.java",
     ],
     visibility = [
-        "//tools/junit_runner/test/build/please/cover/runner/...",
-        "//tools/junit_runner/test/build/please/test/runner/...",
+        "//junit_runner/test/build/please/cover/runner/...",
+        "//junit_runner/test/build/please/test/runner/...",
     ],
     deps = [
         "//third_party/java:junit",
-        "//tools/junit_runner/src/build/please/common/test",
+        "//junit_runner/src/build/please/common/test",
     ],
 )

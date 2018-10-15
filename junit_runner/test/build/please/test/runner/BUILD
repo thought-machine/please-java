@@ -4,9 +4,9 @@ java_test(
     deps = [
         ":test_runner",
         "//third_party/java:junit",
-        "//tools/junit_runner/src/build/please/test/result",
-        "//tools/junit_runner/src/build/please/test/runner",
-        "//tools/junit_runner/test/build/please/test/runner/testdata",
+        "//junit_runner/src/build/please/test/result",
+        "//junit_runner/src/build/please/test/runner",
+        "//junit_runner/test/build/please/test/runner/testdata",
     ],
 )
 
@@ -17,9 +17,9 @@ java_library(
     ],
     test_only = True,
     visibility = [
-        "//tools/junit_runner/test/build/please/cover/runner/...",
+        "//junit_runner/test/build/please/cover/runner/...",
     ],
     deps = [
-        "//tools/junit_runner/src/build/please/test/runner",
+        "//junit_runner/src/build/please/test/runner",
     ],
 )

@@ -1,11 +1,11 @@
 java_library(
     name = "runner",
     srcs = glob(["*.java"]),
-    visibility = ["//tools/junit_runner/..."],
+    visibility = ["//junit_runner/..."],
     deps = [
         "//third_party/java/jacoco",
-        "//tools/junit_runner/src/build/please/cover/result",
-        "//tools/junit_runner/src/build/please/test/result",
-        "//tools/junit_runner/src/build/please/test/runner",
+        "//junit_runner/src/build/please/cover/result",
+        "//junit_runner/src/build/please/test/result",
+        "//junit_runner/src/build/please/test/runner",
     ],
 )

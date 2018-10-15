@@ -6,12 +6,12 @@ java_test(
     deps = [
         "//third_party/java:junit",
         "//third_party/java/jacoco",
-        "//tools/junit_runner/src/build/please/cover/result",
-        "//tools/junit_runner/src/build/please/cover/runner",
-        "//tools/junit_runner/src/build/please/test/result",
-        "//tools/junit_runner/src/build/please/test/runner",
-        "//tools/junit_runner/test/build/please/cover/runner/testdata",
-        "//tools/junit_runner/test/build/please/test/runner:test_runner",
+        "//junit_runner/src/build/please/cover/result",
+        "//junit_runner/src/build/please/cover/runner",
+        "//junit_runner/src/build/please/test/result",
+        "//junit_runner/src/build/please/test/runner",
+        "//junit_runner/test/build/please/cover/runner/testdata",
+        "//junit_runner/test/build/please/test/runner:test_runner",
     ],
 )
 
@@ -23,7 +23,7 @@ java_test(
     deps = [
         "//third_party/java:junit",
         "//third_party/java/jacoco",
-        "//tools/junit_runner/src/build/please/cover/runner",
-        "//tools/junit_runner/test/build/please/cover/runner/testdata",
+        "//junit_runner/src/build/please/cover/runner",
+        "//junit_runner/test/build/please/cover/runner/testdata",
     ],
 )

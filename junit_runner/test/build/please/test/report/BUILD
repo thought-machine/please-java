@@ -3,7 +3,7 @@ java_test(
     srcs = ["XmlTestReporterTest.java"],
     deps = [
         "//third_party/java:junit",
-        "//tools/junit_runner/src/build/please/test/report",
-        "//tools/junit_runner/src/build/please/test/result",
+        "//junit_runner/src/build/please/test/report",
+        "//junit_runner/src/build/please/test/result",
     ],
 )

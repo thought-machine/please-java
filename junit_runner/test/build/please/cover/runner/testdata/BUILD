@@ -5,10 +5,10 @@ java_library(
         "SampleClassTest.java",
     ],
     visibility = [
-        "//tools/junit_runner/test/build/please/cover/runner/...",
+        "//junit_runner/test/build/please/cover/runner/...",
     ],
     deps = [
         "//third_party/java:junit",
-        "//tools/junit_runner/src/build/please/common/test",
+        "//junit_runner/src/build/please/common/test",
     ],
 )

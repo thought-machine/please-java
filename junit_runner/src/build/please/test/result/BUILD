@@ -1,7 +1,7 @@
 java_library(
     name = "result",
     srcs = glob(["*.java"]),
-    visibility = ["//tools/junit_runner/..."],
+    visibility = ["//junit_runner/..."],
     deps = [
         "//third_party/java:junit",
     ],

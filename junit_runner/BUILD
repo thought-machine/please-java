@@ -3,6 +3,6 @@ java_binary(
     main_class = "build.please.main.TestMain",
     visibility = ["PUBLIC"],
     deps = [
-        "//tools/junit_runner/src/build/please/main:junit_runner",
+        "//junit_runner/src/build/please/main:junit_runner",
     ],
 )
