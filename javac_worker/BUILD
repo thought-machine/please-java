@@ -1,6 +1,4 @@
-subinclude("//build_defs:maven_library")
-
-subinclude("//build_defs:version")
+subinclude("@pleasings//java:maven_library")
 
 # The rest of the repo uses this tool as a compiler worker, but it obviously
 # can't compile itself.
@@ -10,7 +8,7 @@ maven_library(
     name = "javac-worker",
     srcs = glob(["src/**/*.java"]),
     pom = "pom.xml",
-    version = VERSION,
+    version = "13.2.0",
     deps = ["//third_party/java:gson"],
 )
 
