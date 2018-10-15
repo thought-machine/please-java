@@ -1,9 +1,5 @@
 subinclude("@pleasings//java:maven_library")
 
-# The rest of the repo uses this tool as a compiler worker, but it obviously
-# can't compile itself.
-package(javac_tool = "javac")
-
 maven_library(
     name = "javac-worker",
     srcs = glob(["src/**/*.java"]),
