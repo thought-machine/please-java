@@ -7,9 +7,9 @@ maven_library(
     version = "13.2.0",
     visibility = ["//junit_runner/..."],
     deps = [
+        "//jacoco_shaded",
         "//third_party/java:hamcrest",
         "//third_party/java:junit",
-        "//third_party/java/jacoco",
     ],
 )
 
