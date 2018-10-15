@@ -1,3 +1,5 @@
+subinclude("@pleasings//java:maven_library")
+
 java_binary(
     name = "jacoco",
     deps = [
@@ -11,7 +13,7 @@ genrule(
         "jar": [":jacoco"],
         "rules": ["jarjar_rules.txt"],
     },
-    outs = ["jacoco_shaded.jar"],
+    outs = ["jacoco-shaded-0.8.1.jar"],
     cmd = "$TOOL process $SRCS_RULES $SRCS_JAR $OUT",
     tools = ["//third_party/java/jarjar:bin"],
     visibility = ["PUBLIC"],
@@ -20,6 +22,7 @@ genrule(
 maven_library(
     name = "jacoco-shaded",
     srcs = [],
+    jar = ":jacoco_shaded",
     pom = "pom.xml",
     version = "0.8.1",
 )

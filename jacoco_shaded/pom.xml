@@ -1,12 +1,12 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>build.please</groupId>
-  <artifactId>junit-runner</artifactId>
+  <artifactId>jacoco-shaded</artifactId>
   <version>__VERSION__</version>
   <packaging>jar</packaging>
 
-  <name>junit-runner</name>
-  <description>JUnit test runner for Please to run Java tests with.</description>
+  <name>jacoco-shaded</name>
+  <description>Vendored copy of JaCoCo to avoid polluting global namespace.</description>
   <url>https://please.build</url>
 
   <developers>
@@ -29,15 +29,7 @@
   </licenses>
 
   <scm>
-    <url>https://github.com/thought-machine/please</url>
+    <url>https://github.com/thought-machine/please-java</url>
   </scm>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-    </dependency>
-  </dependencies>
 
 </project>
