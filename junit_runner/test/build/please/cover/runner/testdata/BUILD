@@ -8,7 +8,7 @@ java_library(
         "//junit_runner/test/build/please/cover/runner/...",
     ],
     deps = [
+        "//junit_runner:junit-runner",
         "//third_party/java:junit",
-        "//junit_runner/src/build/please/common/test",
     ],
 )

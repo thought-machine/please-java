@@ -5,6 +5,7 @@ maven_library(
     srcs = glob(["src/**/*.java"]),
     pom = "pom.xml",
     version = "13.2.0",
+    visibility = ["//junit_runner/..."],
     deps = [
         "//third_party/java:hamcrest",
         "//third_party/java:junit",
