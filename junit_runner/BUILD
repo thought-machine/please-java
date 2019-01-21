@@ -1,10 +1,12 @@
+subinclude("//:version")
+
 subinclude("@pleasings//java:maven_library")
 
 maven_library(
     name = "junit-runner",
     srcs = glob(["src/**/*.java"]),
     pom = "pom.xml",
-    version = "13.2.0",
+    version = VERSION,
     visibility = ["//junit_runner/..."],
     deps = [
         "//jacoco_shaded",

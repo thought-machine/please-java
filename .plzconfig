@@ -1,7 +1,11 @@
 [buildconfig]
-; You may need to override these; they're set to facilitate running tests etc locally.
+; You may need to override this for building releases if your key is in a different place.
 signing-key = ~/.keys/plz.gpg.asc
 gpg-password = 12345
+
+[build]
+; You'll need to set this env var to build releases too.
+passenv = GPG_PASSWORD
 
 [java]
 javacworker = //javac_worker

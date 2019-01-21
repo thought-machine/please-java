@@ -1,3 +1,5 @@
+subinclude("//:version")
+
 subinclude("@pleasings//java:maven_library")
 
 package(javac_tool = "javac")
@@ -6,7 +8,7 @@ maven_library(
     name = "javac-worker",
     srcs = glob(["src/**/*.java"]),
     pom = "pom.xml",
-    version = "13.2.0",
+    version = VERSION,
     deps = ["//third_party/java:gson"],
 )
 
