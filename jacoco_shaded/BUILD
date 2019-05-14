@@ -13,7 +13,7 @@ genrule(
         "jar": [":jacoco"],
         "rules": ["jarjar_rules.txt"],
     },
-    outs = ["jacoco-shaded-0.8.1.jar"],
+    outs = ["jacoco-shaded-0.8.4.jar"],
     cmd = "$TOOL process $SRCS_RULES $SRCS_JAR $OUT",
     tools = ["//third_party/java/jarjar:bin"],
     visibility = ["PUBLIC"],
@@ -24,5 +24,5 @@ maven_library(
     srcs = [],
     jar = ":jacoco_shaded",
     pom = "pom.xml",
-    version = "0.8.1",
+    version = "0.8.4",
 )
