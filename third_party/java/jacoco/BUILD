@@ -11,7 +11,7 @@ maven_jar(
 
 maven_jar(
     name = "jacoco.report",
-    hash = "b8a3b5de0c123f3b6a63d144bd32161f68233960",
+    hash = "0ad88809893bb6007f68722dcd467893a9777977",
     id = "org.jacoco:org.jacoco.report:0.8.4",
     visibility = ["PUBLIC"],
     deps = [":jacoco.core"],
