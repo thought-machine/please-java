@@ -1,10 +1,9 @@
 package build.please.compile;
 
-import java.util.Locale;
-
 import javax.tools.Diagnostic;
 import javax.tools.DiagnosticListener;
 import javax.tools.JavaFileObject;
+import java.util.Locale;
 
 class DiagnosticReporter implements DiagnosticListener<JavaFileObject> {
 

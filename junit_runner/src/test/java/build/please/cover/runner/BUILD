@@ -6,8 +6,8 @@ java_test(
     deps = [
         "//jacoco_shaded",
         "//junit_runner:junit-runner",
-        "//junit_runner/test/build/please/cover/runner/testdata",
-        "//junit_runner/test/build/please/test/runner:test_runner",
+        "//junit_runner/src/test/java/build/please/cover/runner/testdata",
+        "//junit_runner/src/test/java/build/please/test/runner:test_runner",
         "//third_party/java:junit",
     ],
 )
@@ -20,7 +20,7 @@ java_test(
     deps = [
         "//jacoco_shaded",
         "//junit_runner:junit-runner",
-        "//junit_runner/test/build/please/cover/runner/testdata",
+        "//junit_runner/src/test/java/build/please/cover/runner/testdata",
         "//third_party/java:junit",
     ],
 )
