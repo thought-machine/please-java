@@ -2,8 +2,8 @@ package(default_visibility = ["PUBLIC"])
 
 maven_jar(
     name = "junit",
-    hash = "59721f0805e223d84b90677887d9ff567dc534d7c502ca903c0c2b17f05c116a",
-    id = "junit:junit:4.12",
+    hash = "8e495b634469d64fb8acfa3495a065cbacc8a0fff55ce1e31007be4c16dc57d3",
+    id = "junit:junit:4.13.2",
 )
 
 maven_jar(
